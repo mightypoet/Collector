@@ -1,0 +1,8 @@
+{
+  "name": "Collector",
+  "description": "Digital menu and loyalty program platform serving restaurants and retail shops with neo-brutalist UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

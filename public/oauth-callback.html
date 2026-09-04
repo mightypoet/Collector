@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authenticating...</title>
+</head>
+<body>
+  <script>
+    if (window.opener) {
+      window.opener.postMessage({ type: 'SUPABASE_AUTH_HASH', hash: window.location.hash }, '*');
+      window.close();
+    } else {
+      window.location.href = '/';
+    }
+  </script>
+  <p style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+    Authentication successful. This window should close automatically.
+  </p>
+</body>
+</html>
